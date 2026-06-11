@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Hunter Escape</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--audio next will be add-->
+    
+
+    <!---Welcome-->
+
+    <div id="welcome-screen" class="screen active">
+
+        <div class="welcome-box">
+
+            <h1 class="glitch" data-text="BUG HUNTER ESCAPE">
+                BUG HUNTER ESCAPE
+            </h1>
+
+            <P class="subtitle">SECTOR-7 • 2026</P>
+
+            <div class="input-group">
+                <label>Enter Your Name</label>
+
+                <input
+                type="text"
+                id="username"
+                placeholder="Fahim"
+                >
+            </div>
+
+            <button class="main-btn" onclick="startGame()">
+                START MISSION
+            </button>
+
+            <p class="creator">
+                Made By Ifat Khalil Fahim
+            </p>
+
+        </div>
+    </div>
+
+
+    <!---Story Screen-->
+
+    <div id="story-screen" class="screen">
+        <div class="story-box">
+            <h2>YOU ARE TRAPPED !</h2>
+
+            <div id="story-text"></div>
+
+            <button class="main-btn" onclick="startMission()">
+                BEGIN ESCAPE
+            </button>
+
+        </div>
+    </div>
+
+
+    <!---Game Screen-->
+
+    <div id="game-screen" class="screen">
+        <div class="game-box">
+
+            <div class="top-bar">
+
+                <div class="info-box">
+                    LEVEL <span id="level-num"> 1</span>
+                </div>
+
+                <div class="info-box">
+                    ⏱️ <span id="timer">60</span>s
+                </div>
+
+                <div class="info-box">
+                    QUESTION <span id="q-num">1 </span>/10
+                </div>
+
+                <div class="info-box">
+                    SCORE <span id="score">0</span>
+                </div>
+
+                <div class="life-box" id="lives">
+                    ❤️ ❤️ ❤️
+                </div>
+
+            </div>
+
+            <div class="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            
+
+            <h1 class="game-title">
+                
+            </h1>
+
+            <div class="code-box">
+                <pre id="code-display">Loading...</pre>
+            </div>
+
+            <div id="ai-message" class="ai-message">
+                System Waiting ...
+            </div>
+
+            <input
+            
+            type="text"
+            id="answer-input"
+            placeholder="Enter Missing Code ..."
+            onkeypress="if(event.key==='Enter') submitAnswer()"
+            >
+
+            <div class="btn-group">
+
+                <button class="submit-btn" onclick="submitAnswer()">
+                    SUBMIT FIX
+                </button>
+                <button class="hint-btn" onclick="showHint()">
+                    HINT
+                </button>
+
+                <button class="res-btn" onclick="restartGame()">RESTART</button>
+
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+
+
+            <div id="door-status" class="door-status hidden"></div>
+
+        </div>
+
+    </div>
+    
+    
+    <!---End Screen-->
+
+    <div id="end-screen" class="screen">
+        <div class="game-box">
+            <h1 id="end-title"></h1>
+            <p id="final-score"></p>
+            <p id="high-score"></p>
+
+            <button class="main-btn" onclick="restartGame()">RESTART</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="popup" class="popup hidden">
+        ACCESS GRANTED
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
