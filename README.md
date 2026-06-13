@@ -2,7 +2,7 @@
 
 A story-driven coding escape game built with **HTML, CSS, and JavaScript**.
 
-As I am currently learning JavaScript, I created this project to practice DOM manipulation, game logic, timers, local storage, and user interaction while building something fun and creative.
+As I recently learned JavaScript,, I created this project to practice DOM manipulation, game logic, timers, local storage, and user interaction while building something fun and creative.
 
 ## 🎮 Live Demo
 
