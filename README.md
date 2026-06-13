@@ -81,7 +81,14 @@ While building this project, I practiced:
 * Web Speech API
 
 ---
+## 🧠 Challenges Faced
 
+- Managing game state across multiple levels
+- Synchronizing timer, score, and life systems
+- Implementing progress persistence with Local Storage
+- Integrating Web Speech API for narration
+
+---
 ## 🔮 Future Improvements
 
 * Background music
